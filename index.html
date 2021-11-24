@@ -1,0 +1,248 @@
+
+<!-- saved from url=(0055)http://localhost:8085/jsp_project/main_servlet/index.do -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./index_files/bootstrap.min.css">
+<script src="./index_files/bootstrap.min.js.다운로드"></script>
+
+
+
+
+
+<title>jsp project</title>
+<script src="./index_files/jquery-3.3.1.min.js.다운로드"></script>
+</head>
+<body>
+<table border="0" align="center" class="table">
+	<tbody><tr>
+		<td style="padding: 40px 20px;">
+			
+  
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./index_files/bootstrap.min.css">
+<script src="./index_files/bootstrap.min.js.다운로드"></script>
+	
+
+<table border="0" align="center">
+	<thead>
+	<tr>	
+		<th style="padding: 30px 20px; background-color: #BDBDBD;" scope="col" class="text-center">
+ 			<a href="http://localhost:8085/jsp_project">HOME</a>  
+		 	<a href="http://localhost:8085/jsp_project/data_servlet/list.do">의료진 / 진료과</a>  
+		 	<a href="http://localhost:8085/jsp_project/booking_servlet/booking.do">진료예약</a>  
+		 	<a href="http://localhost:8085/jsp_project/memo_servlet/list.do">질문사항</a>  
+		 	<a href="http://localhost:8085/jsp_project/survey_servlet/list.do">설문사항</a>  
+		 	<a href="http://localhost:8085/jsp_project/shop_servlet/list.do">shop</a>  
+		 	<a href="http://localhost:8085/jsp_project/chart_servlet/index.do">Chart</a>  
+		</th>
+		<th style="padding: 30px 20px; background-color: #BDBDBD;" scope="col" class="text-center">
+			
+			    
+					 	 <a href="http://localhost:8085/jsp_project/member_servlet/login.do">login</a>  
+					 	<a href="http://localhost:8085/jsp_project/member_servlet/insert.do">join</a>  
+				
+		 		
+			
+		</th>
+	</tr>
+	</thead>
+
+		
+	<tbody><tr>
+		<td align="center" style="padding:50px 50px;" colspan="2">
+		<!-- 본문시작 -->
+			
+  
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./index_files/bootstrap.min.css">
+<script src="./index_files/bootstrap.min.js.다운로드"></script>
+ 
+
+
+	<div>
+		
+  
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./index_files/bootstrap.min.css">
+<script src="./index_files/bootstrap.min.js.다운로드"></script>
+ 
+
+<div align="left" style="font-weight: bold; font-size: 20px;"> 병원소개</div>
+<hr style="border: solid 2px; color:#0080FF;">
+
+
+
+<script>
+	function insert(){
+			if(confirm("등록하시겠습니까?")){
+			indexForm.method="post";
+			indexForm.action ="/jsp_project/link_servlet/insertProc.do";
+			indexForm.submit();
+		}
+	}
+</script>
+
+	<div>
+		<img src="./index_files/PHbldg_015a8x12.jpg" phbldg_015a8x12.jpg="">
+	</div>
+	<div>병원 홈페이지입니다.</div>
+	
+		
+
+
+
+	</div>
+<br><br>
+
+	<div>
+		
+  
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./index_files/bootstrap.min.css">
+<script src="./index_files/bootstrap.min.js.다운로드"></script>
+ 
+
+
+<div align="left" style="font-weight: bold; font-size: 20px;"> 진료시간</div>
+<hr style="border: solid 2px; color:#0080FF;">
+
+<br>
+<script>
+
+	$(document).ready(function(){
+	   $("#textarea").on("keyup", function(){
+	      textarea_resize(this, 10);
+	   });
+	});
+	
+	insertr();
+	
+	function insert2(){
+			if(confirm("등록하시겠습니까?")){
+			contentForm.method="post";
+			contentForm.action ="/jsp_project/link_servlet/contentProc.do";
+			contentForm.submit();
+		}
+	}
+</script>
+<br>
+		
+  
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./index_files/bootstrap.min.css">
+<script src="./index_files/bootstrap.min.js.다운로드"></script>
+ 
+
+
+
+	<div>					평일진료 : 오전 9시 ~ 오후 6시<br>주말진료 : 오전 9시 ~ 오후 2시<br>점심시간 : 오후1~오후2시</div>
+	
+		
+
+	</div>	
+<br><br>
+	
+	<div>
+		
+    
+<div align="left" style="font-weight: bold; font-size: 20px;"> 병원 위치</div>
+<hr style="border: solid 2px; color:#0080FF;">
+
+
+<div id="map" style="width: 600px; height: 300px; position: relative; overflow: hidden; background: url(&quot;http://t1.daumcdn.net/mapjsapi/images/bg_tile.png&quot;);"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; touch-action: none; cursor: url(&quot;http://t1.daumcdn.net/mapjsapi/images/cursor/openhand.cur.ico&quot;) 7 5, url(&quot;http://t1.daumcdn.net/mapjsapi/images/cursor/openhand.cur.ico&quot;), default;"><div style="position: absolute;"><div style="position: absolute; z-index: 0;"></div><div style="position: absolute; z-index: 1; left: 0px; top: 0px;"><img src="./index_files/1463.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -144px; top: 177px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1464.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 112px; top: 177px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1465.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 368px; top: 177px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1466.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 624px; top: 177px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1463(1).png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -144px; top: -79px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1464(1).png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 112px; top: -79px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1465(1).png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 368px; top: -79px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1466(1).png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 624px; top: -79px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1463(2).png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -144px; top: -335px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1464(2).png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 112px; top: -335px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1465(2).png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 368px; top: -335px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="./index_files/1466(2).png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 624px; top: -335px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"></div><div style="position: absolute; z-index: 1;"></div><div style="width: 600px; height: 300px; position: absolute; z-index: 1;"></div><div style="position: absolute; z-index: 1;"><svg version="1.1" style="stroke: none; stroke-dashoffset: 0.5; stroke-linejoin: round; fill: none; transform: translateZ(0px); position: absolute; width: 3000px; height: 1500px; left: -1200px; top: -600px;" viewBox="0 0 3000 1500"><defs></defs></svg></div><div style="position: absolute; z-index: 1; width: 100%; height: 0px; transform: translateZ(0px);"><div style="position: absolute; margin: -39px 0px 0px -14px; z-index: 0; left: 300px; top: 150px;"><img draggable="false" src="./index_files/marker.png" alt="" title="" style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; user-select: none; -webkit-user-drag: none; clip: rect(0px, 29px, 42px, 0px); top: 0px; left: 0px; width: 29px; height: 42px;"><img src="./index_files/transparent.gif" alt="" draggable="false" usemap="#daum.maps.Marker.Area:1" style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; user-select: none; -webkit-user-drag: none; width: 29px; height: 42px;"><map id="daum.maps.Marker.Area:1" name="daum.maps.Marker.Area:1"><area href="javascript:void(0)" alt="" shape="poly" coords="14,39,9,27,4,21,1,16,1,10,4,4,11,0,18,0,25,4,28,10,28,16,25,21,20,27" title="" style="-webkit-tap-highlight-color: transparent;"></map></div></div></div></div><div style="position: absolute; cursor: default; z-index: 1; margin: 0px 6px; height: 19px; line-height: 14px; left: 0px; bottom: 0px; color: rgb(0, 0, 0);"><div style="color: rgb(0, 0, 0); text-align: center; font-size: 10px; float: left;"><div style="float: left; margin: 2px 3px 0px 4px; height: 6px; transition: width 0.1s ease 0s; border-top: none rgb(0, 0, 0); border-right: 2px solid rgb(0, 0, 0); border-bottom: 2px solid rgb(0, 0, 0); border-left: 2px solid rgb(0, 0, 0); border-image: initial; width: 46px;"></div><div style="float: left; margin: 0px 4px 0px 0px; font-family: AppleSDGothicNeo-Regular, 돋움, dotum, sans-serif; font-weight: bold; color: rgb(0, 0, 0);">50m</div></div><div style="margin: 0px 4px; float: left;"><a target="_blank" href="http://map.kakao.com/" title="Kakao 지도로 보시려면 클릭하세요." style="float: left; width: 32px; height: 10px;"><img src="./index_files/m_bi_b.png" alt="Kakao 지도로 이동" style="float: left; width: 32px; height: 10px; border: none;"></a><div style="font: 11px / 11px Arial, Tahoma, Dotum, sans-serif; float: left;"></div></div></div><div style="cursor: auto; position: absolute; z-index: 2; left: 0px; top: 0px;"></div></div>
+	<script type="text/javascript" src="./index_files/sdk.js.다운로드"></script><script charset="UTF-8" src="./index_files/kakao.js.다운로드"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(35.86611589064593, 128.60510341065014),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+		
+		// 마커가 표시될 위치입니다 
+		var markerPosition  = new kakao.maps.LatLng(35.86611589064593, 128.60510341065014); 
+		
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+		    position: markerPosition
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+  
+	</script>
+	<br>
+	<div style="font-weight: bold; font-size: 20px; background-color:#E6E6E6;" align="left">병원주소 <br><br> </div>
+	<div style="background-color:#E6E6E6;" align="left"> 경북대학교병원 주소(41944) 대구광역시 중구 동덕로 130 / 130 Dongdeok-ro, Jung-gu, Daegu 41944, Korea</div>
+	
+	</div>
+		<!-- 본문 종료 -->
+		</td>
+		
+	</tr>
+	<tr>
+		<td align="center" style="padding:20px 20px;" colspan="2">
+			
+  
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./index_files/bootstrap.min.css">
+<script src="./index_files/bootstrap.min.js.다운로드"></script>
+
+
+   <span style="font-size: 13px; letter-spacing: -1px;"> 
+   	<a href="http://localhost:8085/jsp_project/link_servlet/info.do">개인정보처리 방침</a>  
+   </span>
+   <span style="font-size: 13px; letter-spacing: -1px;">
+   	<a href="mailto:qaz696606@gmail.com">이메일문의</a>  
+   	</span>
+   <div style="font-size: 12px">Copyright ⓒ 2021 GJH.All rights reserved.</div>
+		</td>
+	</tr>
+</tbody></table>
+
+
+
+<div style="font-size: 20px; position: relative; right:0px;">
+	<a href="http://localhost:8085/jsp_project/main_servlet/index.do#" onclick="javascript:window.scrollTo(0,0)">🔼</a>
+</div></td></tr></tbody></table></body></html>
